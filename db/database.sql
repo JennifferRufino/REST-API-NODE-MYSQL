@@ -1,0 +1,16 @@
+create database if not exists company;
+
+use company;
+
+create table employees(
+	id int(11) not null auto_increment,
+    name varchar(45) default null,
+    salary int (11) default null,
+    primary key(id)
+);
+
+describe employees;
+
+insert into employees values(1, 'Jenniffer Rufino', 20000), (2, 'Fhillype Diniz', 30000), (3, 'Felipe David', 40000);
+
+select *from employees;
